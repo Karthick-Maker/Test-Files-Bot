@@ -12,8 +12,7 @@ pymysql.install_as_MySQLdb()
 
 def start() -> scoped_session:
     #engine = create_engine(DB_URI, client_encoding="utf8")
-    #engine = create_engine("sqlite:///testdb.db", echo=True)
-    engine = create_engine("mysql://dina_file_store:filestore@9876@184.168.112.170/file_store_db", echo=True)
+    engine = create_engine(DB_URI, echo=True)
     BASE.metadata.bind = engine
     BASE.metadata.create_all(engine)
     return scoped_session(sessionmaker(bind=engine, autoflush=False))
