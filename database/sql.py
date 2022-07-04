@@ -5,7 +5,7 @@ from sqlalchemy import create_engine
 from sqlalchemy import Column, TEXT, Numeric
 from sqlalchemy.ext.declarative import declarative_base
 import pymysql
-#from config import DB_URI
+from config import DB_URI
 from sqlalchemy.orm import sessionmaker, scoped_session
 
 pymysql.install_as_MySQLdb()
