@@ -48,7 +48,7 @@ async def add_user(id, user_name):
           
 async def full_userbase():
     users = SESSION.query(Broadcast).all()
-    SESSION.close()
+    #SESSION.close()
     return users
 
 async def query_msg():
