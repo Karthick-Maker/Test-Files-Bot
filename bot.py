@@ -1,4 +1,4 @@
-#(©)Codexbotz
+#HR Botz
 
 import pyromod.listen
 from pyrogram import Client
